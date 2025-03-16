@@ -22,7 +22,7 @@ fi
 echo "cloning repo"
 cd ~
 git clone https://github.com/Redgreen64/installer
-sudo cp ~/installer/installer/folder/* ~/chatterbox/
+sudo cp ~/installer/installer/folder/main.py ~/chatterbox/main.py
 echo "Installing Dependencies"
 sudo apt install pipx -y
 sudo apt install python3-pip -y
