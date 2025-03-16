@@ -36,4 +36,4 @@ try:
     while True:
         talk()
 except KeyboardInterrupt:
-    print(f"closed {f.name}!")
+    print("closed")
