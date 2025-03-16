@@ -22,6 +22,7 @@ fi
 echo "cloning repo"
 cd ~
 git clone https://github.com/Redgreen64/installer
+mkdir chatterbox
 sudo cp ~/installer/installer/folder/main_nosound.py ~/chatterbox/main_nosound.py
 echo "Installing Dependencies"
 sudo apt install python3-pip -y
