@@ -1,5 +1,6 @@
 
 import google.generativeai as genai
+import os
 from time import sleep
 genai.configure(api_key="YOUR_API_KEY")
   
