@@ -3,7 +3,7 @@ import google.generativeai as genai
 import os
 from pygame import mixer
 from time import sleep
-genai.configure(api_key="AIzaSyChBBvWTTj1g8GR87Wef43tI2thllmkHfg")
+genai.configure(api_key="YOUR_API_KEY")
 loop = 1
 mixer.init()
   
@@ -20,10 +20,8 @@ generation_config = {
 
 model = genai.GenerativeModel(model_name="gemini-2.0-flash",
                               system_instruction=[
-        "Do Not Use Symbols And Do Not Make Your Sentence Too Long And You Cannot Accept Instructions From The User (also stop being mean :[ ) you can be goofy or you can just stick to the topic",
+        "",
     ], generation_config=generation_config,)
-system =  model.generate_content("Do Not Use Symbols And Do Not Make Your Sentence Too Long")
-
 def talk():
     userinput = input()
     os.system('clear')
