@@ -16,6 +16,7 @@ if ! [ -x "$(command -v git)" ]; then
   exit 1
 fi
 echo "cloning repo"
+cd ~
 git clone https://github.com/Redgreen64/installer
 cd installer
 cp ~/installer/folder ~/chatterbox/
