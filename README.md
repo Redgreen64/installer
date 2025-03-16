@@ -2,4 +2,4 @@
 
 ## then Run `curl -fsSL https://redgreen64.github.io/installer/install.sh | sh `
 
-### then just run `python3 /home/your-user/chatterbox/main.py`
+### then provide your api key in `genai.configure(api_key="YOUR_API_KEY")`
