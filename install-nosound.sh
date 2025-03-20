@@ -1,4 +1,8 @@
 #!/bin/bash
+if ! [ -x "$(command -v python3)" ]; then
+  echo 'wh- HOW?!' >&2
+  exit 1
+fi
 if ! [ -x "$(command -v sudo)" ]; then
   echo 'no sudo. no pass.' >&2
   exit 1
