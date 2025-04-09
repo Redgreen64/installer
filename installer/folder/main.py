@@ -22,11 +22,13 @@ model = genai.GenerativeModel(model_name="gemini-2.0-flash",
                               system_instruction=[
         "",
     ], generation_config=generation_config,)
+chat = model.start_chat(history=[])
+
 def talk():
     userinput = input()
     os.system('clear')
     print("/o~o")
-    response = model.generate_content(f"{userinput}")
+    response = chat.send_message(f"{userinput}")
     os.system('clear')
     print("\OoO/")
     os.system(f'espeak-ng "{response.text}"')
