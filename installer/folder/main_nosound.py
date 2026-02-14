@@ -4,7 +4,7 @@ import os
 from time import sleep
 genai.configure(api_key="YOUR_API_KEY")
   
-os.system('clear')
+sys.stdout.flush()
 print("O O")
 print(" V ")
 
@@ -23,16 +23,16 @@ model = genai.GenerativeModel(model_name="gemini-2.0-flash",
 chat = model.start_chat(history=[])
 def talk():
     userinput = input()
-    os.system('clear')
+    sys.stdout.flush()
     print(" - -")
     print("  ^ ")
     response = chat.send_message(f"{userinput}")
-    os.system('clear')
+    sys.stdout.flush()
     print("O 0")
     print(" o ")
     print(response.text)
     sleep(4)
-    os.system('clear')
+    sys.stdout.flush()
     print("O O")
     print(" V ")
 try:
