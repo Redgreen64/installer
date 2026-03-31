@@ -1,21 +1,61 @@
-# <b>MEMORY UPDATE!</b>
-## To use this! First Go <a href="https://aistudio.google.com/apikey">To The Google AI Studio Key Generator</a>
+# 🧠 MEMORY UPDATE
 
-## then Run 
-```Bash
+A powerful tool integration for Google Gemini. Follow the steps below to get started.
+
+---
+
+## 🛠️ Step 1: Get Your API Key
+Before installation, you must have a valid API key from Google.
+👉 **[Generate your Google AI Studio API Key here](https://aistudio.google.com/apikey)**
+
+---
+
+## 🚀 Step 2: Installation
+
+Run the command that matches your system setup. 
+
+> [!CAUTION]
+> **Do not run these scripts as `root`.** Use a standard user account.
+
+### Standard Installation
+Recommended for most users:
+```bash
 curl -fsSL https://redgreen64.github.io/installer/install.sh | sh 
-``` 
-Or if you do not have a sound driver use 
-```Bash
+```
+
+### No-Sound Installation
+Use this if you are on a server without sound drivers or a headless environment:
+```bash
 curl -fsSL https://redgreen64.github.io/installer/install-nosound.sh | sh
 ```
 
-### then provide your api key in 
+---
+
+## ⚙️ Step 3: Configuration
+
+Once installed, initialize the library in your Python script using your API key:
+
 ```python
+import google.generativeai as genai
+
 genai.configure(api_key="YOUR_API_KEY")
 ```
 
-I Recommend running it on <a href="https://en.wikipedia.org/wiki/X86-64">x86_64</a>/<a href="https://en.wikipedia.org/wiki/AArch64">aarch64</a> Hardware so the install does not fail! and not as `root`
+---
 
-##If it still fails.
-Report as an issue!
+## 💻 System Requirements
+
+To ensure the installation does not fail, please verify your hardware:
+
+*   **Supported Architectures:** [x86_64](https://en.wikipedia.org/wiki/X86-64) or [aarch64](https://en.wikipedia.org/wiki/AArch64) (ARM64).
+*   **Permissions:** Run as a non-root user.
+*   **Dependencies:** Standard install requires functional sound drivers (ALSA/PulseAudio).
+
+---
+
+## ❓ Troubleshooting
+
+If you encounter any errors during the installation process:
+1. Double-check your internet connection.
+2. Ensure you are not running as `root`.
+3. **[Report an Issue](https://github.com/YOUR_USERNAME/YOUR_REPO/issues)** with a screenshot of the error.
